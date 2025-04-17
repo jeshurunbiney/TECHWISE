@@ -1,0 +1,54 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato' , sans-serif;
+}
+
+:root {
+    --primary-color:pink;
+    --secondary-color: rgb(45, 150, 199);
+    --assent-color:green;
+    --background-color: grey;
+    --text-color: rgb(50, 49, 49);
+    --border-radius: 3px;
+    --card-background-color: rgb(93, 93, 156);
+}
+
+
+main {
+    padding: 20px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.card {
+    margin-top: 16px;
+    padding: 0;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    /* border: 1px solid var(--primary-color); */
+}
+.card.hover {
+    transform: scale (1.02);
+    box-shadow: 0 0 10px rgba(53, 217, 235, 0.5);
+    transition: transform 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out;
+
+}
+
+.card:first-child {
+    background-color: red;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var (--primary-color)
+}
+
+p {
+    color: var(--text-color)
+}
